@@ -1,5 +1,8 @@
 import { getMeetingData } from "../../api/landingService";
-import { SAVE_ROOM_DATA, UPDATE_DATA_LOAD_STATUS } from "./actionConstants";
+import {
+  UPDATE_LANDING_DATA,
+  UPDATE_DATA_LOAD_STATUS,
+} from "./actionConstants";
 import { isDateToday, isTimingCurrent } from "../../utils/CommonUtils";
 import { API_CALL_STATUS } from "../../constants";
 
@@ -38,7 +41,7 @@ export const loadLandingData = () => async (dispatch, _getState) => {
     });
   });
   dispatch({
-    type: SAVE_ROOM_DATA,
+    type: UPDATE_LANDING_DATA,
     buildings: buildings,
     rooms: {
       total: totalRooms,

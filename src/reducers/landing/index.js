@@ -1,5 +1,5 @@
 import {
-  SAVE_ROOM_DATA,
+  UPDATE_LANDING_DATA,
   UPDATE_DATA_LOAD_STATUS,
 } from "../../actions/landing/actionConstants";
 import { API_CALL_STATUS } from "../../constants";
@@ -13,7 +13,7 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case SAVE_ROOM_DATA:
+    case UPDATE_LANDING_DATA:
       return {
         ...state,
         buildings: action.buildings,
