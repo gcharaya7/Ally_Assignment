@@ -2,7 +2,7 @@ import axios, { AxiosRequestConfig } from "axios";
 
 /**
  * This method is for all the api calls we make throught the application
- * @param {AxiosRequestConfig} config request object
+ * @param  config request object
  * @returns The response of api call
  */
 export default async function fetchApiResponse(config) {

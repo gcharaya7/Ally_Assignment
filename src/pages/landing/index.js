@@ -27,6 +27,7 @@ const LandingPage = (props) => {
       {dataLoadStatus === API_CALL_STATUS.SUCCESS && cardsData?.length && (
         <CardsView cardsData={cardsData} />
       )}
+      {dataLoadStatus === API_CALL_STATUS.ERROR && <p>Something went wrong</p>}
       {dataLoadStatus === API_CALL_STATUS.INPROGRESS && <CircularProgress />}
     </Container>
   );

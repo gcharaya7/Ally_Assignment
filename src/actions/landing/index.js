@@ -12,7 +12,7 @@ export const loadLandingData = () => async (dispatch, _getState) => {
     dataLoadStatus: API_CALL_STATUS.INPROGRESS,
   });
   const meetingsData = await getMeetingData();
-  const buildings = meetingsData.data.Buildings;
+  const buildings = meetingsData?.data?.Buildings || [];
   let totalRooms = 0;
   let totalMeetingsToday = 0;
   let totalMeetingsGoingOn = 0;
