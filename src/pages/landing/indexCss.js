@@ -16,16 +16,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     marginTop: 0,
   },
-  button: {
-    backgroundColor: "#33a852",
-    marginTop: 60,
+  nested: {
+    paddingLeft: theme.spacing(12),
     [theme.breakpoints.down("sm")]: {
-      position: "fixed",
-      bottom: 0,
-      left: 0,
-      width: "100%",
-      borderRadius: 0,
-      padding: 10,
+      paddingLeft: theme.spacing(5),
     },
   },
 }));

@@ -8,7 +8,6 @@ import axios from "axios";
 export default async function fetchApiResponse(config) {
   try {
     config.headers = {
-      token: "6789012345",
       "content-type": "application/json",
     };
     const response = await axios.request(config);

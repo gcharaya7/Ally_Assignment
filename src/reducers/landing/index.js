@@ -5,9 +5,7 @@ import {
 import { API_CALL_STATUS } from "../../constants";
 
 const initialState = {
-  buildings: [],
-  rooms: {},
-  meetings: {},
+  landingData: [],
   dataLoadStatus: API_CALL_STATUS.DEFAULT,
 };
 
@@ -16,9 +14,7 @@ export default (state = initialState, action) => {
     case UPDATE_LANDING_DATA:
       return {
         ...state,
-        buildings: action.buildings,
-        rooms: action.rooms,
-        meetings: action.meetings,
+        landingData: action.landingData,
       };
     case UPDATE_DATA_LOAD_STATUS:
       return {
